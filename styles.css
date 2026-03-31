@@ -1,3 +1,4 @@
+  /*UNIVERSAL SELECTOR  */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,21 +9,26 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: black;
   color: white;
   background-image: url(./images/background.jpg);
+  backdrop-filter: blur(3px);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 /* NAV BAR STYLING */
+
 .navbarstyle {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   background-color: midnightblue;
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
 }
 
 ul {
@@ -30,18 +36,45 @@ ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  margin-top: 9px;
 }
 
 .navbar ul li a {
   text-decoration: none;
   color: skyblue;
-  padding: 8px;
+  padding: 7px;
+  font-size: 1.25rem;
 }
+
+/* .navbar ul li a:link {
+  cursor: pointer;
+  color: rgb(30, 168, 41);
+  transform: scale(1.15);
+} */
+
+/* .navbar ul li a:active {
+  cursor: pointer;
+  color: rgb(201, 219, 38);
+  transform: scale(1.15);
+} */
 
 .navbar ul li a:hover {
   cursor: pointer;
   color: rgb(30, 168, 41);
 }
+
+/* .navbar ul li a:visited {
+  cursor: pointer;
+  color: rgb(31, 51, 58);
+} */
+
+.navbarstyle h3{
+border: 2.5px double skyblue;
+outline: 2.5px double skyblue;
+border-radius: 100%;
+padding: 5.5px;
+}
+
 /* INDEX PAGE */
 
 .my-description {
@@ -54,7 +87,7 @@ ul {
   margin: 2.5% 0px 0px;
 }
 
-section {
+.my-description section {
   padding: 0px 5%;
   width: 40%;
   height: 100%;
@@ -72,8 +105,8 @@ section {
 footer {
   background-color: rgb(6, 6, 58);
   color: white;
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: -174px;
   width: 100%;
 }
 
@@ -113,6 +146,18 @@ footer h3 span {
 
 .contact a img {
   border-radius: 100%;
+}
+
+/* ABOUT ME */
+
+#about{
+height: 100%;
+}
+
+.about-me{
+  text-align: center;
+  width: 100%;
+  margin-top: 2%;
 }
 
 /* MY PROJECTS PAGE */
