@@ -157,7 +157,103 @@ height: 100%;
 .about-me{
   text-align: center;
   width: 100%;
-  margin-top: 2%;
+  height: auto;
+  margin: 2% auto 20%;
+  display: grid;
+  grid-template-columns: 400px 400px;
+   grid-template-rows: 400px 400px;
+  justify-content: space-evenly;
+  gap:5%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-me section{
+  border: 2.5px solid rgb(18, 18, 56);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(10, 50, 88);
+  color: white;
+  margin: 30px 10%;
+  width: 80%;
+  
+}
+
+.about-me section p{
+font-size: large;
+}
+
+.a1{
+  height: 80%;
+}
+
+.a1-1{
+background-image: url(./images/myCharacter.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width:80%;
+}
+
+.a2{
+  height: 80%;
+}
+
+.a2-1{
+ background-image: url(./images/myEducation.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width:80%;
+}
+
+.a3{
+  height: 80%;
+}
+
+.a3-1{
+  background-image: url(./images/myExperience.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width:80%;
+}
+
+.a4{
+  height: 80%;
+}
+.a4-1{
+ background-image: url(./images/myGoals.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width:80%; 
+}
+
+.aboutMeFoot{
+  position: sticky;
+  bottom: 0px;
+  text-align: center;
+  padding: 2%;
+}
+
+.aboutMeFoot section{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin:1%;
+}
+
+.aboutMeFoot section p{
+  background-color: rgb(48, 48, 97);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 0.4%;
+
+}
+ 
+.aboutMeFoot h2{
+  text-decoration: underline;
 }
 
 /* MY PROJECTS PAGE */
@@ -203,6 +299,14 @@ height: 100%;
   text-align: center;
 }
 
-.my-projects section p{
+.my-projects section h3{
   font-size: 1.3rem;
+  padding:5px;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERRIES */
+
+@media screen and{max-width: ;
+  
 }
