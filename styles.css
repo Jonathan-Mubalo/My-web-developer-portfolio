@@ -307,6 +307,31 @@ background-image: url(./images/myCharacter.jpg);
 
 /* MEDIA QUERRIES */
 
-@media screen and{max-width: ;
-  
+
+/* HOME SCREEN */
+@media screen and (max-width: 700px) {
+  .my-description{
+    display:flex;
+    flex-flow: row nowrap;
+    height:auto;
+    flex-direction: column;
+  }
+
+  .my-description section{
+    height: 30%;
+    width: 100%;
+  }
 }
+
+/* ABOUT ME */
+  @media screen and (max-width: 850px) {
+    .about-me{
+      /* gap: 0%; */
+      grid-template-columns: 43% 43%;
+      grid-template-rows: 40% 40%;
+    }
+  }
+
+  @media screen and (max-width: 70px) {
+
+  }
