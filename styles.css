@@ -1,4 +1,4 @@
-  /*UNIVERSAL SELECTOR  */
+/*UNIVERSAL SELECTOR  */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow-x: hidden;
   color: white;
   background-image: url(./images/background.jpg);
@@ -46,33 +46,31 @@ ul {
   font-size: 1.25rem;
 }
 
-/* .navbar ul li a:link {
+.navbar ul li a:link {
   cursor: pointer;
-  color: rgb(30, 168, 41);
-  transform: scale(1.15);
-} */
+  color: rgb(30, 168, 41) !important;
+  /* transform: scale(1.15); */
+}
 
-/* .navbar ul li a:active {
-  cursor: pointer;
-  color: rgb(201, 219, 38);
-  transform: scale(1.15);
-} */
+.active-nav{
+  color: aquamarine !important;
+}
 
 .navbar ul li a:hover {
   cursor: pointer;
   color: rgb(30, 168, 41);
 }
 
-/* .navbar ul li a:visited {
+.navbar ul li a:visited {
   cursor: pointer;
-  color: rgb(31, 51, 58);
-} */
+  color: rgb(9, 175, 235);
+}
 
-.navbarstyle h3{
-border: 2.5px double skyblue;
-outline: 2.5px double skyblue;
-border-radius: 100%;
-padding: 5.5px;
+.navbarstyle h3 {
+  border: 2.5px double skyblue;
+  outline: 2.5px double skyblue;
+  border-radius: 100%;
+  padding: 5.5px;
 }
 
 /* INDEX PAGE */
@@ -146,113 +144,125 @@ footer h3 span {
 
 .contact a img {
   border-radius: 100%;
+  color: aquamarine !important;
+}
+
+.contact a  {
+  color: aquamarine !important;
 }
 
 /* ABOUT ME */
 
-#about{
-height: 100%;
+#about {
+  height: 100%;
 }
 
-.about-me{
+.about-me {
   text-align: center;
   width: 100%;
-  height: auto;
-  margin: 2% auto 20%;
-  display: grid;
-  grid-template-columns: 400px 400px;
-   grid-template-rows: 400px 400px;
+  /* height: auto; */
+  margin: 0.5%;
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: space-evenly;
-  gap:5%;
   align-items: center;
-  justify-content: space-around;
 }
 
-.about-me section{
-  border: 2.5px solid rgb(18, 18, 56);
+.describe-self {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 100%;
+}
+
+.describe-self .text {
+  width: 35%;
+  height: 50vh;
+  border: 4px solid rgb(18, 18, 56);
   border-radius: 15px;
-  padding: 10px;
+  padding: 2%;
   background-color: rgb(10, 50, 88);
   color: white;
-  margin: 30px 10%;
-  width: 80%;
-  
+  margin: 2%;
 }
 
-.about-me section p{
-font-size: large;
+/* .text h1{
+  font-size: ;FOCUS ON THE H1 TAGS ON UR BODY
+} */
+
+.describe-self .describe-image {
+  width: 35vw;
+  height: 50vh;
+  border: 4px solid rgb(18, 18, 56);
+  border-radius: 15px;
+  color: white;
+  margin: 2%;
 }
 
-.a1{
-  height: 80%;
+.about-me section p {
+  font-size: 2.5vh;
 }
 
-.a1-1{
-background-image: url(./images/myCharacter.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width:80%;
+.a1-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
 }
 
-.a2{
-  height: 80%;
+.a2-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
 }
 
-.a2-1{
- background-image: url(./images/myEducation.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width:80%;
+.a3-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
 }
 
-.a3{
-  height: 80%;
+.a4-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
 }
 
-.a3-1{
-  background-image: url(./images/myExperience.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width:80%;
-}
-
-.a4{
-  height: 80%;
-}
-.a4-1{
- background-image: url(./images/myGoals.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width:80%; 
-}
-
-.aboutMeFoot{
-  position: sticky;
-  bottom: 0px;
+.aboutMeFoot {
+  /* position: fixed;
+  bottom: 0px; */
+  width: 100%;
   text-align: center;
   padding: 2%;
 }
 
-.aboutMeFoot section{
+.aboutMeFoot section {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  margin:1%;
+  margin: 1%;
 }
 
-.aboutMeFoot section p{
+.aboutMeFoot section p {
   background-color: rgb(48, 48, 97);
   border: 2px solid black;
   border-radius: 15px;
   padding: 0.4%;
-
 }
- 
-.aboutMeFoot h2{
+
+.aboutMeFoot h2 {
   text-decoration: underline;
 }
 
@@ -269,22 +279,24 @@ background-image: url(./images/myCharacter.jpg);
 .my-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 55vh 55vh;
   width: 90%;
   margin: auto;
-  gap: 10% 10%;
+  gap: 1% 5%;
   height: auto;
   grid-row: space-evenly;
   grid-column: space-evenly;
-  padding: 1%;
+  padding: 3%;
+  /* margin-bottom: 2%; */
 }
 
 .my-projects section {
   border-radius: 15px;
   background-color: rgb(33, 104, 133);
   width: auto;
-  height: auto;
-   border: 4px solid rgb(105, 102, 102);
-   outline: 7px solid black;
+  height: 45vh;
+  border: 4px solid rgb(105, 102, 102);
+  outline: 7px solid black;
 }
 
 .my-projects section img {
@@ -299,39 +311,79 @@ background-image: url(./images/myCharacter.jpg);
   text-align: center;
 }
 
-.my-projects section h3{
+.my-projects section h3 {
   font-size: 1.3rem;
-  padding:5px;
+  padding: 5px;
   text-decoration: underline;
 }
 
 /* MEDIA QUERRIES */
 
-
-/* HOME SCREEN */
-@media screen and (max-width: 700px) {
-  .my-description{
-    display:flex;
-    flex-flow: row nowrap;
-    height:auto;
-    flex-direction: column;
+/* MY PROJECTS PAGE */
+@media screen and (max-width: 800px) {
+  .my-projects {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height:100vh;
+    margin: auto;
+    height: auto;
+    padding: 7%;
+    align-items: space-between;
   }
 
-  .my-description section{
-    height: 30%;
-    width: 100%;
+  .my-projects section{
+    margin-bottom: 10%;
   }
 }
 
-/* ABOUT ME */
-  @media screen and (max-width: 850px) {
-    .about-me{
-      /* gap: 0%; */
-      grid-template-columns: 43% 43%;
-      grid-template-rows: 40% 40%;
-    }
+/* HOME SCREEN */
+@media screen and (max-width: 700px) {
+  .my-description {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0px;
   }
 
-  @media screen and (max-width: 70px) {
-
+  .my-description section {
+    height: 30%;
+    width: 100%;
+    margin-bottom: 5%;
   }
+
+  /* .my-description section img { */
+  /* } */
+
+  /* ABOUT ME */
+
+  .describe-self {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .describe-image,
+  .text {
+    width: 65vw !important;
+  }
+
+  .describe-image {
+    order: 1 !important;
+  }
+
+  .text {
+    width: 80vw !important;
+    order: -1 !important;
+    height: 34vh !important;
+    margin-bottom: 14% !important;
+  }
+
+  .about-me section h1 {
+    font-size: 4vh;
+  }
+}
